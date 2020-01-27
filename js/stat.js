@@ -24,7 +24,7 @@ var getMaxElement = function (arr) {
   return maxElement;
 };
 
-var setSaturate = function () {
+var setBlueSaturation = function () {
   return Math.round(Math.random() * 100);
 };
 
@@ -48,7 +48,7 @@ window.renderStatistics = function (ctx, names, times) {
     if (names[i] === 'Вы') {
       ctx.fillStyle = 'rgba(255, 0, 0, 1)';
     } else {
-      ctx.fillStyle = 'hsl(240,' + setSaturate() + '%,50%)';
+      ctx.fillStyle = 'hsl(240,' + setBlueSaturation() + '%,50%)';
     }
     ctx.fillRect(BAR_WIDTH + (50 + BAR_WIDTH) * i + CLOUD_X, 80 + CLOUD_Y + BAR_HEIGHT - barRelativHt, BAR_WIDTH, barRelativHt);
 
